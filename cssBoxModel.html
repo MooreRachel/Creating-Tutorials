@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color: lightgrey;
+    width: 200px;
+    border: 10px solid indigo;
+    padding: 10px;
+    margin: 50px;
+}
+
+.divCss3 {
+    background-color: orange;
+    width: 200px;
+    border: 10px solid indigo;
+    padding: 10px;
+    margin: 50px;
+    box-sizing: border-box;
+
+}
+</style>
+</head>
+<body>
+  <p>Margin, border, padding, and content is the order of the CSS Box Model. It works from
+    the outside of the box towards the content. The Margin is the space outside
+    of the box and it is transparent. The border, in this example, is Indigo.
+    The border is the  area around the padding and the content. The padding is
+    transparent and it is the area around the content. The content of the box
+    can hold text or images.
+
+<div>
+<h2>CSS Box Model</h2>
+
+
+<br> width: 200px
+<br> border: 10px solid indigo
+<br> padding: 10px
+<br> margin: 50px
+
+   </p>
+
+ </div>
+ <p>
+   The total width for the box above is 340 pixels.  It is calculated by multiplying the border,
+   padding, and margin by 2 for the right and left sides.
+   Then adding the sum of the multiplied border, padding, and margin
+   with the width equals the total width of the box model.
+ </p>
+
+ <div class = "divCss3">
+   <h2>CSS3 Box Model box-sizing Property</h2>
+
+   <br> width: 200px
+   <br> border: 10px solid indigo
+   <br> padding: 10px
+   <br> margin: 50px
+   <br>box-sizing: border-box
+</div>
+<p> As you can see all the properties in the second box are the same except
+   for the box-sizing property that is because the box-sizing property allows
+   us to include the padding and the border in an elements total width and height.
+
+<p> Also you will notice that both boxes are fixed and not responsive. If you
+  adjust your browser window the paragraph text resizes however the size of the boxes remain unchanged.
+
+  <p> So with CSS3 keep in mind that the calculations for the box model is different
+    when using the CSS3 box-sizing property. How would you make the second box
+    the same size as the first box when using the box-sizing property?
+
+
+
+
+</body>
+</html>
