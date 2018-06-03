@@ -2,19 +2,20 @@
 <html>
 <head>
 <style>
+
 div {
     background-color: lightgrey;
-    width: 200px;
-    border: 10px solid indigo;
-    padding: 10px;
+    width: 225px;
+    border: 15px solid indigo;
+    padding: 50px;
     margin: 50px;
 }
 
 .divCss3 {
     background-color: orange;
-    width: 200px;
-    border: 10px solid indigo;
-    padding: 10px;
+    width: 225px;
+    border: 15px solid indigo;
+    padding: 50px;
     margin: 50px;
     box-sizing: border-box;
 
@@ -22,53 +23,57 @@ div {
 </style>
 </head>
 <body>
-  <p>Margin, border, padding, and content is the order of the CSS Box Model. It works from
-    the outside of the box towards the content. The Margin is the space outside
-    of the box and it is transparent. The border, in this example, is Indigo.
-    The border is the  area around the padding and the content. The padding is
-    transparent and it is the area around the content. The content of the box
-    can hold text or images.
+  <h1>CSS Box Model</h1>
+  <img src = "pictures-1000_381.jpg">
+  
+  <p>
+    The CSS box model consists of Margin, Border, Padding, and Content.
+    A CSS box model diagram and more information can be found at <a href = "https://www.w3schools.com/Css/css_boxmodel.asp" target = "_blank"> here, at W3Schools.</a>
+  </p>
 
-<div>
-<h2>CSS Box Model</h2>
+  <p> I think of the CSS box model like a wall decorated with pictures. Each picture is an HTML element. 
+    Some of the pictures have frames. Some are just canvases. Some picures have mats inside the frame 
+    while others have only the frame. The wall is the browser window. The spaces between the pictures are the margins. 
+    The picture is the content. The frame is the border. The mat is the padding between the content and the frame.
+  </p>
+  
+  <p>
+    Below is two exapmples of the box model. The Margin is the invisible space outside of the box between Html elements. The border, in this example, is Indigo. 
+    The border is the area around the padding and the content. The padding is transparent and it is the area around the content. 
+    The content of the box can hold text or images.
+  </p>
 
+  <div>
+    <h2>CSS Box Model</h2>   
+    <br> width: 225px
+    <br> border: 15px solid indigo
+    <br> padding: 50px
+    <br> margin: 50px
+  </div>
 
-<br> width: 200px
-<br> border: 10px solid indigo
-<br> padding: 10px
-<br> margin: 50px
-
-   </p>
-
- </div>
- <p>
-   The total width for the box above is 340 pixels.  It is calculated by multiplying the border,
-   padding, and margin by 2 for the right and left sides.
-   Then adding the sum of the multiplied border, padding, and margin
-   with the width equals the total width of the box model.
- </p>
-
- <div class = "divCss3">
+  <div class = "divCss3">
    <h2>CSS3 Box Model box-sizing Property</h2>
-
-   <br> width: 200px
-   <br> border: 10px solid indigo
-   <br> padding: 10px
+   <br> width: 225px
+   <br> border: 15px solid indigo
+   <br> padding: 50px
    <br> margin: 50px
    <br>box-sizing: border-box
-</div>
-<p> As you can see all the properties in the second box are the same except
-   for the box-sizing property that is because the box-sizing property allows
-   us to include the padding and the border in an elements total width and height.
+  </div>
+  
+  <p>
+    The total width for the first box above is 355 pixels.  It is calculated by multiplying the border, padding, and margin by 2 for the right and left sides.
+    Then adding the sum of the multiplied border, padding, and margin with the width equals the total width of the box model.
+  </p>
+  
+  <p> The second box is using the same properties except that is using CSS3 box sizing: border-box.
+    The box-sizing property allows for easier calculations of the width of the element, which is set by the width property. 
+    The width of the second box is 225 px. The padding and the border are included in the elements total width and height.
+  </p>
 
-<p> Also you will notice that both boxes are fixed and not responsive. If you
-  adjust your browser window the paragraph text resizes however the size of the boxes remain unchanged.
-
-  <p> So with CSS3 keep in mind that the calculations for the box model is different
-    when using the CSS3 box-sizing property. How would you make the second box
-    the same size as the first box when using the box-sizing property?
-
-
+  <p> Also back to our pictures on the wall example, you'll notice that the blank space between the two boxes as well as the space 
+      between the text and the left side of the browser window is 50 pixels which is set by the margin property</p>
+  
+ 
 
 
 </body>
